@@ -25,3 +25,9 @@ RUN cp /build/main .
 EXPOSE 3000
 
 CMD ["/dist/main"]
+
+FROM scratch
+
+COPY --from=builder  /dist/main /
+
+ENTRYPOINT ["/main"]
