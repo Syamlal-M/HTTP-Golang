@@ -4,13 +4,11 @@ ENV GO111MODULE=on \
     GOOS=linux \
     GOARCH=amd64
 
-env  SENDER_EMAIL=syamlal.classic@gmail.com
-ARG  RECEIVER_EMAIL
+env  SENDER_EMAIL="emailaddress"
+env  RECEIVER_EMAIL="emailaddress"
 
 ARG PASSWORD
 
-
-ENV PASSWORD=hashmind@123
 RUN mkdir /build 
 WORKDIR /build
 
