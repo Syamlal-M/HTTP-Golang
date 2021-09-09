@@ -134,9 +134,9 @@ We can pass the envirmental variable/  the variable through the command line whi
 
 we can specify the credetials as an Argument in the docker file and we can call value argument from the command line while build the image 
  
- `docker build . -t golangapp  --build-arg PASSWORD=$PASSWORD`
+ `docker build . -t gols --build-arg PASSWORD=$PASSWORD  --build-arg RECEIVER_EMAIL=$RECEIVER_EMAIL --build-arg SENDER_EMAIL=$SENDER_EMAIL
+D`
  
- I have specified the emails as env variable and password as ARG.Already exported PASSWORD to system env.
- 
+
  ========================================================================================================
 
