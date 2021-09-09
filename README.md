@@ -1,6 +1,6 @@
 #1.Build the docker image from the docker file with arguments 
 
-docker build . -t gols --build-arg PASSWORD=$PASSWORD
+docker build . -t gols --build-arg PASSWORD=$PASSWORD --build-arg RECEIVER_EMAIL=$RECEIVER_EMAIL --build-arg SENDER_EMAIL=$SENDER_EMAIL
 
 #Create he container from  the docker image
 
